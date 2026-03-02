@@ -3660,6 +3660,8 @@ article.markdown-section {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  flex: 1 1 auto;
+  width: 0;
   min-width: 0;
   line-height: 1.35;
   font-size: 11px;
@@ -3838,6 +3840,8 @@ article.markdown-section {
   position: relative;
   border: 1px solid transparent;
   border-radius: 7px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 6px 7px;
   min-height: 24px;
   line-height: 1.35;
@@ -3874,7 +3878,7 @@ article.markdown-section {
 .dpr-inline-field .dpr-inline-text {
   display: inline-block;
   width: 100%;
-  max-width: calc(100% - 14px);
+  max-width: 100%;
   font-size: 11px;
 }
 
